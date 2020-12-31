@@ -11,7 +11,7 @@
     <dxg:GridControl ItemsSource="{Binding Items}">
         <dxg:GridColumn FieldName="Value">
             <dxg:GridColumn.EditSettings>
-                <dxe:AutoSuggestEditSettings ImmediatePopup="True" ItemsSource="{Binding Cities}" />
+                <dxe:AutoSuggestEditSettings ImmediatePopup="True" />
             </dxg:GridColumn.EditSettings>
         </dxg:GridColumn>
         <dxg:GridControl.View>

@@ -10,7 +10,11 @@ namespace DXSample {
     public partial class MainWindow : Window {
         public ObservableCollection<Item> Items { get; set; }
         public MainWindow() {
-            Items = new ObservableCollection<Item>();
+            Items = new ObservableCollection<Item> {
+                new Item { Value = "A" },
+                new Item { Value = "B" },
+                new Item { Value = "C" }
+            };
             DataContext = this;
             InitializeComponent();
         }
@@ -22,7 +26,7 @@ namespace DXSample {
         }
         void HiddenEditor(object sender, EditorEventArgs e) {
             if (ActiveEditor != null) {
-                ActiveEditor.QuerySubmitted += QuerySubmitted;
+                ActiveEditor.QuerySubmitted -= QuerySubmitted;
                 ActiveEditor.ItemsSource = null;
                 ActiveEditor = null;
             }
