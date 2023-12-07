@@ -38,7 +38,7 @@ void HiddenEditor(object sender, EditorEventArgs e) {
 
 * [AutoSuggestEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.AutoSuggestEdit)
 * [AutoSuggestEditSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.Settings.AutoSuggestEditSettings)
-* [Assign Editors to Cells](https://docs.devexpress.devx/WPF/401011/controls-and-libraries/data-grid/data-editing-and-validation/modify-cell-values/assign-an-editor-to-a-cell)
+* [Assign Editors to Cells](https://docs.devexpress.com/WPF/401011/controls-and-libraries/data-grid/data-editing-and-validation/modify-cell-values/assign-an-editor-to-a-cell)
 
 ## More Examples
 
