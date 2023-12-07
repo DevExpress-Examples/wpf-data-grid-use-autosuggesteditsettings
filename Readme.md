@@ -3,11 +3,16 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T961510)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# How to use AutoSuggestEditSettings in Data Grid
 
-This example demonstrates how to handle [AutoSuggestEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.AutoSuggestEdit) events when [ColumnBase.EditSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.ColumnBase.EditSettings) is set to [AutoSuggestEditSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.Settings.AutoSuggestEditSettings). 
+# WPF Data Grid - Use AutoSuggestEditSettings
 
-`AutoSuggestEditSettings` is not a visual element and it does not offer events such as [AutoSuggestEdit.QuerySubmitted](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.AutoSuggestEdit.QuerySubmitted). You can handle [GridViewBase.ShownEditor](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.ShownEditor) to subscribe to these events for an active editor and then unsubscribe from these events in the [GridViewBase.HiddenEditor](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.HiddenEditor) event handler.
+This example demonstrates how to handle [AutoSuggestEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.AutoSuggestEdit) events when the [ColumnBase.EditSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.ColumnBase.EditSettings) property is set to [AutoSuggestEditSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.Settings.AutoSuggestEditSettings). 
+
+![image](https://github.com/DevExpress-Examples/how-to-use-autosuggesteditsettings-in-data-grid/assets/65009440/26774fdc-2470-4a0f-aac7-f860dea8fd59)
+
+## Implementation Details
+
+`AutoSuggestEditSettings` is not a visual element and it does not include events (for example, [AutoSuggestEdit.QuerySubmitted](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.AutoSuggestEdit.QuerySubmitted)). You can handle [GridViewBase.ShownEditor](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.ShownEditor) to subscribe to these events for an active editor and then unsubscribe from these events in the [GridViewBase.HiddenEditor](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridViewBase.HiddenEditor) event handler.
 
 ```cs
 AutoSuggestEdit ActiveEditor;
@@ -23,3 +28,19 @@ void HiddenEditor(object sender, EditorEventArgs e) {
     }
 }
 ```
+
+## Files to Review
+
+* [MainWindow.xaml](./CS/MainWindow.xaml)
+* [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MainWindow.xaml.vb))
+
+## Documentation
+
+* [AutoSuggestEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.AutoSuggestEdit)
+* [AutoSuggestEditSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.Settings.AutoSuggestEditSettings)
+* [Assign Editors to Cells](https://docs.devexpress.devx/WPF/401011/controls-and-libraries/data-grid/data-editing-and-validation/modify-cell-values/assign-an-editor-to-a-cell)
+
+## More Examples
+
+* [Populate WPF AutoSuggestEdit Asynchronously](https://github.com/DevExpress-Examples/How-to-populate-AutoSuggestEdit-asynchronously)
+* [Use WPF AutoSuggestEdit with InfiniteAsyncSource](https://github.com/DevExpress-Examples/How-to-use-AutoSuggestEdit-with-InfiniteAsyncSource)
