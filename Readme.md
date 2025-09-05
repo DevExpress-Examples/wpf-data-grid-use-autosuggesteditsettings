@@ -43,8 +43,9 @@ void HiddenEditor(object sender, EditorEventArgs e) {
 
 ## More Examples
 
-* [Populate WPF AutoSuggestEdit Asynchronously](https://github.com/DevExpress-Examples/How-to-populate-AutoSuggestEdit-asynchronously)
-* [Use WPF AutoSuggestEdit with InfiniteAsyncSource](https://github.com/DevExpress-Examples/How-to-use-AutoSuggestEdit-with-InfiniteAsyncSource)
+* [WPF Data Grid - How to Validate Data Rows]([https://github.com/DevExpress-Examples/How-to-populate-AutoSuggestEdit-asynchronously](https://github.com/DevExpress-Examples/wpf-data-grid-validate-data-rows))
+* [Data Grid for WPF - How to Refresh the Data Grid on a Timer]([https://github.com/DevExpress-Examples/How-to-use-AutoSuggestEdit-with-InfiniteAsyncSource](https://github.com/DevExpress-Examples/wpf-data-grid-refresh-on-timer))
+
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
@@ -52,3 +53,4 @@ void HiddenEditor(object sender, EditorEventArgs e) {
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
