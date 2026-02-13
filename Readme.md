@@ -46,7 +46,7 @@ void HiddenEditor(object sender, EditorEventArgs e) {
 * [Populate WPF AutoSuggestEdit Asynchronously](https://github.com/DevExpress-Examples/How-to-populate-AutoSuggestEdit-asynchronously)
 * [Use WPF AutoSuggestEdit with InfiniteAsyncSource](https://github.com/DevExpress-Examples/How-to-use-AutoSuggestEdit-with-InfiniteAsyncSource)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-use-autosuggesteditsettings&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-use-autosuggesteditsettings&~~~was_helpful=no)
 
